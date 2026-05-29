@@ -1,0 +1,43 @@
+/* Button.css */
+.custom-contact-btn {
+  background: linear-gradient(123deg, #18011F 7%, #B600A8 37%, #7621B0 72%, #BE4C00 100%);
+  box-shadow: 0px 4px 4px rgba(181, 1, 167, 0.25), 4px 4px 12px #7721B1 inset;
+  outline: 2px solid #FFFFFF;
+  outline-offset: -3px;
+}
+
+/* Store download icon buttons */
+.store-download-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border: 2px solid #D7E2EA;
+  background-color: transparent;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.store-download-btn:hover {
+  background-color: rgba(215, 226, 234, 0.1);
+}
+
+.store-btn-logo {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+@media (min-width: 640px) {
+  .store-download-btn {
+    width: 56px;
+    height: 56px;
+  }
+
+  .store-btn-logo {
+    width: 24px;
+    height: 24px;
+  }
+}

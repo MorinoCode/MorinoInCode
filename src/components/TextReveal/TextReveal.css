@@ -1,0 +1,21 @@
+/* TextReveal.css */
+.text-reveal-char-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.text-reveal-char-bg {
+  opacity: 0.2;
+}
+
+.text-reveal-char-fg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.text-reveal-word {
+  display: inline-block;
+  white-space: nowrap;
+}

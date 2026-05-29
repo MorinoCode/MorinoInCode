@@ -1,0 +1,95 @@
+/* ProjectCard.css */
+.project-card-container {
+  top: 96px;
+}
+
+@media (min-width: 768px) {
+  .project-card-container {
+    top: 128px;
+  }
+}
+
+/* Image Grid Layout */
+.project-images-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+}
+
+.project-images-left {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  order: 2; /* Main preview on top, supporting screens below */
+}
+
+.project-images-right {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  order: 1;
+}
+
+.project-img-wrapper {
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: #141414;
+  position: relative;
+}
+
+.img-left-1, .img-left-2 {
+  aspect-ratio: 4 / 3;
+  width: 100%;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.project-img-wrapper:hover .project-img {
+  transform: scale(1.04);
+}
+
+/* Desktop Grid overrides */
+@media (min-width: 768px) {
+  .project-images-grid {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 16px;
+    align-items: stretch;
+  }
+
+  .project-images-left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    order: 0;
+    height: 100%;
+  }
+
+  .project-images-right {
+    order: 0;
+    height: 100%;
+    aspect-ratio: auto;
+  }
+
+  .project-img-wrapper {
+    border-radius: 32px;
+  }
+
+  .img-left-1 {
+    height: clamp(130px, 16vw, 230px);
+    aspect-ratio: auto;
+  }
+
+  .img-left-2 {
+    height: clamp(160px, 22vw, 340px);
+    aspect-ratio: auto;
+    flex-grow: 1;
+  }
+}

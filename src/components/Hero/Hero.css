@@ -1,0 +1,56 @@
+/* Hero.css */
+@keyframes scrollLine {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(200%); }
+}
+
+@keyframes pulseFade {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+.scroll-line-indicator {
+  animation: scrollLine 1.8s ease-in-out infinite;
+}
+
+.sound-tip-pulse {
+  animation: pulseFade 2s ease-in-out infinite;
+}
+
+.hero-video-scale {
+  transform: scale(1.18);
+  transform-origin: center center;
+}
+
+.hero-title-name {
+  font-size: clamp(3rem, 12vw, 10.5rem);
+  background: linear-gradient(
+    120deg,
+    #ffffff 0%,
+    #d88bf7 25%,
+    #f43f5e 50%,
+    #60a5fa 75%,
+    #ffffff 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: shineGradient 8s linear infinite;
+}
+
+@keyframes shineGradient {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title-name {
+    font-size: clamp(2rem, 10vw, 4.5rem);
+  }
+}

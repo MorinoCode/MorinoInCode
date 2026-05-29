@@ -1,0 +1,8 @@
+/* About.css */
+.about-floating-img img {
+  transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.about-floating-img:hover img {
+  transform: scale(1.05) rotate(5deg);
+}

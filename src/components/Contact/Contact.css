@@ -1,0 +1,19 @@
+/* Contact.css */
+.contact-card {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.contact-shader-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.15; /* Subtle opacity so it serves as a beautiful background and text remains perfectly readable */
+  pointer-events: none;
+}
+
+.contact-shader-bg canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
