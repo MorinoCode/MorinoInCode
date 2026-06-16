@@ -10,7 +10,7 @@ import aboutPic2 from '../../assets/aboutme/aboutmePic (3).png';
 import aboutPic3 from '../../assets/aboutme/aboutmePic (2).png';
 import aboutPic4 from '../../assets/aboutme/aboutmePic (4).png';
 
-const ABOUT_TEXT = "I'm a Full-Stack Developer & Designer. I focus on UI/UX, full-stack development, and GenAI integration — turning rough ideas into clean, performant, and engaging digital experiences. Let's build something incredible together!";
+const ABOUT_TEXT = "I'm a Full-Stack Developer & Designer. I focus on UI/UX and full-stack development — turning rough ideas into clean, performant, and engaging digital experiences. Let's build something incredible together!";
 
 const SKILL_CATEGORIES = [
   { label: 'Languages', items: ['JavaScript', 'HTML', 'CSS', 'SQL'] },
@@ -95,7 +95,7 @@ export const About = () => {
         <Reveal delay={0} y={40}>
           <h2
             className="hero-heading font-black uppercase leading-none tracking-tight"
-            style={{ fontSize: 'clamp(3rem, 12vw, 160px)' }}
+            style={{ fontSize: 'clamp(3rem, 12vw, 160px)', color: '#ffffff' }}
           >
             About me
           </h2>

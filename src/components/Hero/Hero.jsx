@@ -150,7 +150,7 @@ export const Hero = () => {
         </Reveal>
 
         {/* Hero Title */}
-        <div className="flex flex-1 items-end pb-28 sm:pb-32 md:items-center md:pb-0">
+        <div className="flex flex-1 items-end pb-6 sm:pb-8 md:pb-10">
           <div className="w-full max-w-7xl px-6 md:px-10">
             <Reveal delay={0.3} y={20}>
               <p className="mb-4 text-[10px] sm:text-xs font-medium uppercase tracking-[0.35em] text-white/60">
@@ -166,7 +166,7 @@ export const Hero = () => {
             </Reveal>
             <Reveal delay={0.85} y={20}>
               <p className="mt-5 md:mt-7 text-[10px] sm:text-xs md:text-sm font-medium uppercase tracking-[0.3em] text-white/75">
-                Full-Stack Developer · Designer · GenAI Integration
+                Full-Stack Developer
               </p>
             </Reveal>
           </div>

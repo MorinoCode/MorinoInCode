@@ -13,6 +13,9 @@ import kuwaitqiratImage3 from '../../assets/projects/project3/3.png';
 import ffstechImage1 from '../../assets/projects/project4/1.png';
 import ffstechImage2 from '../../assets/projects/project4/2.png';
 import ffstechImage3 from '../../assets/projects/project4/3.png';
+import silentvoteImage1 from '../../assets/projects/project5/1.png';
+import silentvoteImage2 from '../../assets/projects/project5/2.png';
+import silentvoteImage3 from '../../assets/projects/project5/3.png';
 import './Projects.css';
 
 const PROJECTS_DATA = [
@@ -54,6 +57,15 @@ const PROJECTS_DATA = [
     col1Image1: ffstechImage1,
     col1Image2: ffstechImage2,
     col2Image: ffstechImage3
+  },
+  {
+    number: '05',
+    category: 'Product · Online Game',
+    name: 'SilentVote: Mafia',
+    liveUrl: 'https://silentvote-mafia.vercel.app/',
+    col1Image1: silentvoteImage1,
+    col1Image2: silentvoteImage2,
+    col2Image: silentvoteImage3
   }
 ];
 

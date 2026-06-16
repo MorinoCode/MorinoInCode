@@ -47,12 +47,6 @@ const CONTACTS_DATA = [
     href: 'mailto:mr.rasti69@gmail.com'
   },
   {
-    icon: MessageCircle,
-    label: 'WhatsApp',
-    value: '0737202595',
-    href: 'https://wa.me/46737202595'
-  },
-  {
     icon: Linkedin,
     label: 'LinkedIn',
     value: 'in/morteza-rasti-8869b41a4',
@@ -81,7 +75,7 @@ export const Contact = () => {
         <Reveal y={40}>
           <h2
             className="hero-heading text-center font-black uppercase tracking-tight leading-none mb-4"
-            style={{ fontSize: 'clamp(3rem, 12vw, 160px)' }}
+            style={{ fontSize: 'clamp(3rem, 12vw, 160px)', color: '#ffffff' }}
           >
             Get in touch
           </h2>

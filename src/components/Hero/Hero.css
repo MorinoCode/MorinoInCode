@@ -23,7 +23,7 @@
 }
 
 .hero-title-name {
-  font-size: clamp(3rem, 12vw, 10.5rem);
+  font-size: clamp(3rem, 10vw, 8.5rem);
   background: linear-gradient(
     120deg,
     #ffffff 0%,
@@ -51,6 +51,6 @@
 
 @media (max-width: 768px) {
   .hero-title-name {
-    font-size: clamp(2rem, 10vw, 4.5rem);
+    font-size: clamp(2rem, 8vw, 3.8rem);
   }
 }
